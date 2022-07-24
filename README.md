@@ -1,9 +1,13 @@
 # Box Crawler
 Easily download all the videos and PDF files from tus.app.box.com.
 
-## Install
+## Environment
 
-This project uses [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases) and requests. Go check them out if you don't have them locally installed.
+* Python 3.7 and above are recommended
+
+* Anaconda is recommended
+
+* This project uses [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases) and requests. Go check them out if you don't have them locally installed.
 
 ```sh
 $ requests
