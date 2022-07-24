@@ -1,3 +1,14 @@
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+#files
+*.pdf
+*.m4s
+*.mp4
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
