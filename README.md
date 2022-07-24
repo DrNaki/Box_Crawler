@@ -22,31 +22,31 @@ pip install requests
 
 3. Pick the first label like below.
 
-![image-20220724160135954](D:\PyCharmProject\Box_Crawler\img\image-20220724160135954.png)
+![image-20220724160135954](https://github.com/DrNaki/Box_Crawler/blob/main/img/image-20220724160135954.png)
 
 
 
 4. Select `cookies` and copy the value. Replace the value of `cookies` in the configuration file.
 
-![image-20220724160242840](D:\PyCharmProject\Box_Crawler\img\image-20220724160242840.png)
+![image-20220724160242840](https://github.com/DrNaki/Box_Crawler/blob/main/img/image-20220724160242840.png)
 
 
 
 5. Drag the video progress bar to the end.
 
-![image-20220724160634625](D:\PyCharmProject\Box_Crawler\img\image-20220724160634625.png)
+![image-20220724160634625](https://github.com/DrNaki/Box_Crawler/blob/main/img/image-20220724160634625.png)
 
 
 
 6. Check the developer tool to get the serial number of the end clip of the video.
 
-![image-20220724160851203](D:\PyCharmProject\Box_Crawler\img\image-20220724160851203.png)
+![image-20220724160851203](https://github.com/DrNaki/Box_Crawler/blob/main/img/image-20220724160851203.png)
 
 
 
 7. Replace the value of `end` in the configuration file. (An one-hour-long video usually has 700 clips.)
 
-![image-20220724160937591](D:\PyCharmProject\Box_Crawler\img\image-20220724160937591.png)
+![image-20220724160937591](https://github.com/DrNaki/Box_Crawler/blob/main/img/image-20220724160937591.png)
 
 8. Execute the program.
 
