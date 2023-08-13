@@ -144,16 +144,18 @@ class crawlPDF():
             url = 'https://dl.boxcloud.com/api/2.0/internal_files/{}/versions/{}/representations/dash/content/{}/{}/{}.m4s'.format(
                 self.id, self.version, data, video, page)
 
-            try:
-                resp = requests.get(url=url, params=params, headers=headers, timeout=60)
-            except:
-                for _ in range(3):
-                    try:
-                        resp = requests.get(url, params=params, headers=headers, timeout=60)
-                        break
-                    except:
+            max_retries = 10  # 设置最大重试次数
+            for attempt in range(max_retries):
+                try:
+                    resp = requests.get(url=url, params=params, headers=headers, timeout=60)
+                    break
+                except:
+                    if attempt < max_retries - 1:
                         time.sleep(3)
                         continue
+                    else:
+                        print(f"{data}/{page}.m4s 下载失败")
+                        return False
             try:
                 tmp = json.loads(resp.text)
                 print(tmp)
